@@ -1,0 +1,25 @@
+<body>
+    <h1>Contador</h1>
+
+    <div id="counter">0</div>
+
+    <button id="add-counter">+</button>
+    <button id="subtract-counter">-</button>
+
+    <script>
+        //Seleciono os botões para adicionar e subtrair, e também a div que mostrará o valor
+        const addCounterButton = document.getElementById('add-counter');
+        const subtractCounterButton = document.getElementById('subtract-counter');
+        const counter = document.getElementById('counter');
+
+        //Adiciono eventos para somar e subtrair do valor da div
+        addCounterButton.addEventListener('click', function(){
+            console.log(counter.textContent);
+            counter.textContent = parseInt(counter.textContent) + 1;
+        })
+        subtractCounterButton.addEventListener('click', function(){
+            counter.textContent = parseInt(counter.textContent) - 1;
+        })
+    </script>
+
+</body>

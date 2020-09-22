@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Codare</title>
+</head>
+<body>
+    <h1>Contador de Caracteres</h1>
+
+    <input type="text" id="string-input">
+    <div id="character-counter">0</div>
+
+    <script>
+        //Seleciono o input das palavras e a div que mostrará a quantidade de caracteres
+        const stringInput = document.getElementById('string-input');
+        const stringCounter = document.getElementById('character-counter');
+
+        //Adiciono um evento para que sempre que o input for alterado, a div receba a quantidade de caracteres
+        stringInput.addEventListener('input', function(){
+            stringCounter.textContent = stringInput.value.length;
+        })
+    </script>
+
+</body>
+</html>

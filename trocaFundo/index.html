@@ -1,0 +1,20 @@
+    <style>
+        /*Classe que define a nova cor do fundo*/
+        .new-background {
+            background-color: red;
+        }
+    </style>
+
+    <h1>Trocar cor do fundo</h1>
+
+    <button id="switch-color-btn">Trocar de cor!</button>
+
+    <script>
+        //Seleciono o elemento botão
+        const switchColorButton = document.getElementById('switch-color-btn');
+
+        //Adiciono um evento ao botão que, ao clicar, adiciona ou remove uma classe CSS que altera o fundo
+        switchColorButton.addEventListener('click', function () {
+            document.body.classList.toggle('new-background');
+        })
+    </script>
